@@ -1,0 +1,17 @@
+{
+  "name": "translab",
+  "version": "1.0.0",
+  "description": "aplicación web para ver el saldo bip",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "test",
+    "development"
+  ],
+  "author": "NataliaMH",
+  "license": "ISC"
+}
