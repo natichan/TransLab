@@ -1,22 +1,30 @@
 {
   "name": "translab",
-  "version": "1.0.0",
-  "description": "aplicación web para ver el saldo bip",
+  "version": "0.0.1",
+  "description": "aplicación web para ver saldo bip",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "firebase-tools": "^4.0.2",
-    "materialize": "^1.0.0",
-    "mocha": "^5.2.0"
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natichan/TransLab.git"
   },
   "keywords": [
     "test",
     "development"
   ],
   "author": "NataliaMH",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natichan/TransLab/issues"
+  },
+  "homepage": "https://github.com/natichan/TransLab#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
