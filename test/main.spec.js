@@ -24,12 +24,13 @@ describe('iniciar sesión', () => {
                 });
         });
         describe('Debería verificar que ingrese strings', () => {
-            it('No debería ingresar input vacio', () => {
+            it('Ha escrito en el input', () => {
                 assert.equal(validatePassword('aaaaa@aaaa.com'), true);
                 assert.equal(validatePassword(''), false);
                 })
             })
     });
+
     describe('validatePassword(password)', () => {
         it('Deberia ser una función para validar password', () => {
             assert.isFunction(validatePassword);
@@ -40,7 +41,7 @@ describe('iniciar sesión', () => {
                 assert.equal(validatePassword('123456789'), false);
             });
             it('Debería la contraseña ser sólo números', () => {
-                assert.equal(validatePassword('12345678'), true);
+                assert.isNumber(validatePassword('12345678'), true);
                 assert.equal(validatePassword('lechuga'), false);
                 assert.equal(validatePassword('44lechu'), false);
             });
