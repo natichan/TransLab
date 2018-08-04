@@ -7,11 +7,40 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="src/css/">
+    <link rel="stylesheet" href="src/css/main.css">
     <title>Translab</title>
   </head>
   <body>
-
+    <section class="container">
+      <div class="row">
+        <div class="col s12 center ">
+          <img class="logo" src="assets/img/imagen.png" alt="logo Translab">
+          <h2><strong>TRANS-LAB</strong></h2>
+        </div>
+      </div>  
+        <div class="row box">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">perm_identity</i>
+                  <input id="identity" type="text" class="validate">
+                  <label for="icon_identity">E-mail</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input id="password" type="password" class="validate">
+                  <label for="icon_password">Contraseña</label>
+                </div>
+                <div class="col s12 amber darken-2">
+                <a class="waves-effect waves-light btn-large btn-flat" id="signInButton">Iniciar sesión</a>
+                </div>
+        </div>  
+        <div class="row">
+              <div class="col s12">
+                <h6 class="left-align">¿Olvidaste tu contraseña?</h6>
+                <h6 class="center-align">¿NO TIENES CUENTA? <span class="amber-text text-darken-2">REGÍSTRATE</span></h6>
+              </div>
+          </div>      
+    </section>
+      
 
     <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
   </body>

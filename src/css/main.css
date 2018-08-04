@@ -1,0 +1,36 @@
+body{
+    background-color: #404143;
+}
+.logo{
+    width: 40%;
+    margin: 5em 5em 0em 6em;
+    font-weight: bold;
+}
+.box{
+    background-color: white;
+    padding: 0%;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 0%;
+}
+h2{
+    text-align: center;
+    color: #faad00;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.waves-effect{
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+h6{
+    color: white;
+    margin-bottom: 8%;
+}
+header, main, footer {
+    padding-left: 300px;
+}
+.btn-flat:hover{
+    background-color: #faad00;
+}
