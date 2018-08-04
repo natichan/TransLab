@@ -21,8 +21,8 @@
         <div class="row box">
                 <div class="input-field col s12">
                   <i class="material-icons prefix">perm_identity</i>
-                  <input id="identity" type="text" class="validate">
-                  <label for="icon_identity">E-mail</label>
+                  <input id="email" type="text" class="validate">
+                  <label for="icon_identity">Correo Electrónico</label>
                 </div>
                 <div class="input-field col s12">
                   <i class="material-icons prefix">lock_outline</i>
@@ -30,7 +30,7 @@
                   <label for="icon_password">Contraseña</label>
                 </div>
                 <div class="col s12 amber darken-2">
-                <a class="waves-effect waves-light btn-large btn-flat" id="signInButton">Iniciar sesión</a>
+                <a class="waves-effect waves-light btn-large btn-flat" id="signInButton" onclick="loginWithFirebase()">Iniciar sesión</a>
                 </div>
         </div>  
         <div class="row">
@@ -40,9 +40,21 @@
               </div>
           </div>      
     </section>
-      
-
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDbzhknY6lnQXi0CYLGUePdRz9Km69IXvs",
+        authDomain: "translab-a3c8c.firebaseapp.com",
+        databaseURL: "https://translab-a3c8c.firebaseio.com",
+        projectId: "translab-a3c8c",
+        storageBucket: "translab-a3c8c.appspot.com",
+        messagingSenderId: "346982337003"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script src="src/js/signIn.js"></script>
   </body>
 </html>
       
