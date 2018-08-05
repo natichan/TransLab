@@ -4,12 +4,12 @@ Este proyecto es la segunda versión del desafío de Laboratoria para crear una 
 
 #Planificación
 
-En la planificación de este proyecto use [Trello]('https://trello.com/b/kZ4QcznP/translab')
+En la planificación de este proyecto use [Trello](https://trello.com/b/kZ4QcznP/translab).
 
 #Diseño
 El diseño de esta aplicación web fue replicado según el mockup entregado por Laboratoria.Use el framework de Materialize.
 
-<img src="/src/inicio" alt="Inicio">
+![Inicio](https://github.com/natichan/TransLab/blob/master/assets/img/inicio.jpg)
 <img src="/src/menu-lateral.jpg" alt="Menu lateral">
 <img src="/src/opcion-calcular.jpg" alt="Opción calcular">
 <img src="/src/opcion-calcular2.jpg" alt="Opcioón calcular 2">
