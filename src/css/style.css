@@ -18,3 +18,8 @@ body{
     width: 100%;
     font-size: 19px;
 }
+header, .pregFrec{
+    margin-bottom: 15%;
+    padding: 10%;
+    font-weight: bold;
+}
