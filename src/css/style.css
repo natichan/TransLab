@@ -13,6 +13,8 @@ body{
 .verSal{
     font-size: 19px;
     width: 60%;
+    margin-top: 10%;
+    margin-bottom: 15%;
 }
 .menu{
     width: 100%;
@@ -22,4 +24,13 @@ header, .pregFrec{
     margin-bottom: 15%;
     padding: 10%;
     font-weight: bold;
+}
+h6{
+    padding: 3%;
+    margin: 0%;
+}
+p{
+    margin: 0%;
+    padding: 7%;
+    font-size: 40px;
 }
