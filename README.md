@@ -7,16 +7,14 @@ Este proyecto es la segunda versión del desafío de Laboratoria para crear una 
 En la planificación de este proyecto use [Trello](https://trello.com/b/kZ4QcznP/translab).
 
 #Diseño
-El diseño de esta aplicación web fue replicado según el mockup entregado por Laboratoria.Use el framework de Materialize.
+El diseño de esta aplicación web fue replicado según el mockup entregado por Laboratoria. Para eso use el framework de Materialize.
 
-![Inicio](https://github.com/natichan/TransLab/blob/master/assets/img/inicio.jpg)
-<img src="/src/menu-lateral.jpg" alt="Menu lateral">
-<img src="/src/opcion-calcular.jpg" alt="Opción calcular">
-<img src="/src/opcion-calcular2.jpg" alt="Opcioón calcular 2">
-<img src="/src/perfil.jpg" alt="Perfil">
-<img src="/src/preguntas.jpg" alt="Preguntas">
-<img src="/src/versaldo.jpg" alt="Ver Saldo">
-<img src="/src/versaldo2.jpg" alt="Ver Saldo 2">
-<img src="/src/opciones.jpg" alt="Opciones">
-
-
+[Inicio](https://github.com/natichan/TransLab/blob/master/assets/img/inicio.jpg)
+[Menu Lateral](https://github.com/natichan/TransLab/blob/master/assets/img/menu-lateral.jpg)
+[Opcion calcular](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-calcular.jpg)
+[Opcion calcular 2](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-calcular2.jpg)
+[Perfil](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-perfil.jpg)
+[Preguntas](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-preguntas.jpg)
+[Ver saldo](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-versaldo.jpg)
+[Ver saldo 2](https://github.com/natichan/TransLab/blob/master/assets/img/opcion-versaldo2.jpg)
+[Opciones](https://github.com/natichan/TransLab/blob/master/assets/img/opciones.jpg)
