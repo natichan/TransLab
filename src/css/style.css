@@ -1,0 +1,17 @@
+body{
+    background-color: #dcdddf;
+}
+.nav-wrapper{
+    background-color: #404143;
+}
+.card-panel{
+    padding: 1%;
+}
+.space{
+    margin-top: 50%;
+}
+.verSal{
+    font-size: 19px;
+    color: white;
+    width: 60%;
+}
