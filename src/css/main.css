@@ -19,10 +19,9 @@ h2{
     font-size: 30px;
     margin: 0 auto;
 }
-.waves-effect{
+.signIn, .register{
     width: 100%;
-    text-align: center;
-    color: grey;
+    font-size: 20px;
 }
 h6{
     color: white;
@@ -33,4 +32,8 @@ header, main, footer {
 }
 .btn-flat:hover{
     background-color: #faad00;
+}
+.back{
+    margin-top: 5%;
+
 }
