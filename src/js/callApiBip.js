@@ -7,13 +7,16 @@ btn.addEventListener('click', getBipSaldo = () => {
     fetch(url)
         .then(response => response.json()
         ).then(data => {
-            console.log(data);            
-        let dataBip = Object.values(data)
-        let resultTarjeta = dataBip[2];
-        dataBip[2] =document.getElementById('saldoBip').value;
-        container.innerHTML= 
-        `<h6 class='teal grey darken-3 white-text'>SALDO TOTAL</h6>
-            <p class='teal amber darken-2 white-text'>${resultTarjeta}</p>`
-
-    });
+            printData(data);
+            //console.log(data);            
+   });
 });
+
+printData = (data) => {
+    let dataBip = Object.values(data)
+    let resultTarjeta = dataBip[2];
+    dataBip[2] =document.getElementById('saldoBip').value;
+    container.innerHTML= 
+    `<h6 class='teal grey darken-3 white-text'>SALDO TOTAL</h6>
+        <p class='teal amber darken-2 white-text'>${resultTarjeta}</p>`
+}
