@@ -1,6 +1,3 @@
-currentUser= '';
-currentUserEmail = '';
-
 window.onload = ()=>{
     firebase.auth().onAuthStateChanged((user)=>{ // callback a firebase
         if(user){
@@ -14,7 +11,11 @@ window.onload = ()=>{
         saveNumberCardBip = () => {
             let numberCard = cardBip.value;
             firebase.database().ref(`users/` + user.uid).child(`bip`).push(numberCard);
-            // document.getElementById('saldoBip').value = "";    
+            // console.log('User > '+JSON.stringify(user.uid));
+                        
+           /*  bipSaved.innerHTML = // imprime el email de la persona logueada en el perfil
+            `<h6 class='teal white darkgrey-text'>${user.uid}</h6>`; 
+            // document.getElementById('saldoBip').value = "";     */
         };
     });   
 };
