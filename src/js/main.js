@@ -13,8 +13,13 @@ window.loginWithFirebase = () => {
         });
         clickSignIn();
 }
+
 clickSignIn = () => {
     document.getElementById('signInButton').addEventListener('click', redirectMenu = () => {
     location.href="src/menu.html";
     });
+}
+
+signOutUser = () => {
+    firebase.auth().signOut();
 }

@@ -25,8 +25,9 @@ window.registerWithFirebase = () => {
     const password = passwordRegis.value;
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(()=>{
-            console.log("Usuario creado con éxito");
+        .then(()=> {
+            firebase.database().ref().child('')
+              console.log("Usuario creado con éxito");
         })
         .catch((error)=>{
             console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
