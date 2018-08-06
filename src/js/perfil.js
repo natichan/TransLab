@@ -20,3 +20,19 @@ window.onload = ()=>{
     });   
 };
 
+const ref = database.ref('users')
+    ref.on('value', gotData);
+
+    function gotData(data){
+        // console.log(data.val());
+        let savedData = data.val();
+        let keys = Object.keys(savedData);
+        //console.log(keys);
+        for (let i = 0; i < keys.length; i++){
+            let k = keys[i];
+            let first = savedData[k][0]
+            console.log(first);
+            
+        }        
+    }
+
