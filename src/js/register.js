@@ -15,18 +15,24 @@ window.validateEmail = (email) => {
         if(password.length === ''){
             return false;
         }
+        if(password.length < 8){
+            return true;
+        }
     }
     return true;    
 }; 
+
+
 
 //Registro
 window.registerWithFirebase = () => {
     const email = emailRegis.value;
     const password = passwordRegis.value;
-
     firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(()=> {
-            firebase.database().ref().child('')
+        .then((user)=> {
+            firebase.database().ref(`users/${user.user.uid}`).set({
+                emailUser: email,
+            })
               console.log("Usuario creado con éxito");
         })
         .catch((error)=>{
