@@ -4,11 +4,6 @@ currentUserEmail = '';
 window.onload = ()=>{
     firebase.auth().onAuthStateChanged((user)=>{ // callback a firebase
         if(user){
-        currentUser = user.uid; // obtengo id
-        currentUserEmail = user.email; //obtengo email
-        console.log(currentUser);
-        console.log(currentUserEmail);
-
         emailUser.innerHTML = // imprime el email de la persona logueada en el perfil
         `<h6 class='teal white darkgrey-text'>${user.email}</h6>`; 
         //console.log('User > '+JSON.stringify(user));
