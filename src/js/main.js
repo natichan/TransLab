@@ -1,5 +1,5 @@
 //Login
-function loginWithFirebase(){
+window.loginWithFirebase = () => {
     const emailValue = email.value;
     const passwordValue = password.value;
 

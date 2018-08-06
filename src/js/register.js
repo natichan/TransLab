@@ -20,7 +20,7 @@ window.validateEmail = (email) => {
 }; 
 
 //Registro
-function registerWithFirebase(){
+window.registerWithFirebase = () => {
     const email = emailRegis.value;
     const password = passwordRegis.value;
 
