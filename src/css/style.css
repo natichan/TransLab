@@ -16,7 +16,7 @@ body{
     margin-top: 10%;
     margin-bottom: 15%;
 }
-.menu{
+.menu, .addCard{
     width: 100%;
     font-size: 19px;
 }
@@ -36,4 +36,7 @@ p{
 }
 img{
     border-radius: 10em;
+}
+.btn-flat:hover{
+    background-color: #faad00;
 }
