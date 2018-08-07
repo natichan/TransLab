@@ -2,9 +2,9 @@
 window.loginWithFirebase = () => {
     const emailValue = email.value;
     const passwordValue = password.value;
-
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then(()=>{
+            location.href="src/menu.html";
             console.log("Usuario inició sesión con éxito");
         })
         .catch((error)=>{
@@ -13,13 +13,6 @@ window.loginWithFirebase = () => {
         });
         clickSignIn();
 }
-
-clickSignIn = () => {
-    document.getElementById('signInButton').addEventListener('click', redirectMenu = () => {
-    location.href="src/menu.html";
-    });
-}
-
 signOutUser = () => {
     firebase.auth().signOut();
 }

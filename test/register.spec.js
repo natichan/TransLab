@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 global.window = global;
-require('../src/js/register'); //Sólo enlaza el archivo, parecido al script de html
+require('../src/js/register'); 
 
 describe('iniciar sesión validación', () => {
     describe('validateEmail(email)', () => {
@@ -23,26 +23,6 @@ describe('iniciar sesión validación', () => {
                 assert.equal(validateEmail('aaaaa@aaaa.com'), true);
                 assert.equal(validateEmail(''), false);
                 });
-            });
-
-    describe('validatePassword(password)', () => {
-        it('Deberia ser una función para validar password', () => {
-            assert.isFunction(validatePassword);
-        });
-    });
-        describe('Deberia validar la contraseña', () => {
-            it('Debería la contraseña ser de máximo 8 caracteres', () => {
-                assert.equal(validatePassword('12345678'), true);
-                assert.equal(validatePassword('123456789'), false);
-            });
-            it('Debería la contraseña ser sólo números', () => {
-                assert.isNumber(validatePassword('12345678'), true);
-                assert.isNumber(validatePassword('lechuga'), false);
-                assert.isNumber(validatePassword('44lechu'), false);
-            });
-            it('Debería verificar que no ingrese campos vacíos', () => {
-                assert.equal(validatePassword('12345678'), true);
-                assert.equal(validatePassword(''), false);
-            });
-        });   
+            });    
 });
+    

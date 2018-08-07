@@ -9,19 +9,9 @@ window.validateEmail = (email) => {
     const dotSymbol = symbols[1].split('.');
     if(dotSymbol.length != 2 && dotSymbol[0].length < 1 && dotSymbol[1].length < 1){
         return false
-    } 
-    
-    validatePassword = (password) => {
-        if(password.length === ''){
-            return false;
-        }
-        if(password.length < 8){
-            return true;
-        }
     }
-    return true;    
-}; 
-
+    return true;
+};
 //Registro
 window.registerWithFirebase = () => {
     const email = emailRegis.value;
@@ -37,4 +27,4 @@ window.registerWithFirebase = () => {
             console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
             console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
         });
-}
+    }
