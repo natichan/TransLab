@@ -22,8 +22,6 @@ window.validateEmail = (email) => {
     return true;    
 }; 
 
-
-
 //Registro
 window.registerWithFirebase = () => {
     const email = emailRegis.value;

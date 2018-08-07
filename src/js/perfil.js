@@ -1,38 +1,42 @@
+let currentUser= '';
+
 window.onload = ()=>{
     firebase.auth().onAuthStateChanged((user)=>{ // callback a firebase
         if(user){
-        emailUser.innerHTML = // imprime el email de la persona logueada en el perfil
+        // Parameters
+        currentUser = user.uid;
+        emailUserPrint.innerHTML = // imprime el email de la persona logueada en el perfil
         `<h6 class='teal white darkgrey-text'>${user.email}</h6>`; 
         //console.log('User > '+JSON.stringify(user));
         } else {
             console.log('Usuario no logueado')
         }
-        // guardando tarjeta bip
-        saveNumberCardBip = () => {
-            let numberCard = cardBip.value;
-            firebase.database().ref(`users/` + user.uid).child(`bip`).push(numberCard);
-            // console.log('User > '+JSON.stringify(user.uid));
-                        
-           /*  bipSaved.innerHTML = // imprime el email de la persona logueada en el perfil
-            `<h6 class='teal white darkgrey-text'>${user.uid}</h6>`; 
-            // document.getElementById('saldoBip').value = "";     */
-        };
-    });   
+     });   
 };
+    // guardando tarjeta bip
+    saveNumberCardBip = () => {
+        let numberCard = cardBip.value;
+        firebase.database().ref(`users/` + currentUser).child(`bip`).push(numberCard).key;
+    };                
+    
+    //console.log(currentUser)
+    const ref = firebase.database().ref(`users/` + currentUser)
 
-const ref = database.ref('users')
-    ref.on('value', gotData);
-
-    function gotData(data){
-        // console.log(data.val());
-        let savedData = data.val();
-        let keys = Object.keys(savedData);
-        //console.log(keys);
-        for (let i = 0; i < keys.length; i++){
-            let k = keys[i];
-            let first = savedData[k][0]
-            console.log(first);
+    ref.once('value').then((data) => {
+            //console.log(Object.values(data.val()));
             
-        }        
-    }
+            
+            let savedData = Object.values(data.val());
+            let values = Object.values(savedData[0].bip);
+            //console.log(savedData[0].bip);
+            values.forEach(element => {
+                bipSaved.innerHTML = 
+            `<h6 class='teal white darkgrey-text'>${element}</h6>`+ bipSaved.innerHTML; 
+                console.log(element);                
+            });
+            
+            //console.log(values);
+     
+    }); 
+
 
