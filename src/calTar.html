@@ -37,27 +37,24 @@
                     <label>Tarifa</label>
                     <select class="browser-default">
                       <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
                     </select>                              
                 </div>
                 <div class="col s6 m6 l6">
                         <label>Tarjeta</label>
-                        <select class="browser-default">
+                        <select id="rates" class="browser-default">
                           <option value="" disabled selected>Choose your option</option>
-                          <option value="1">$760</option>
-                          <option value="2">$680</option>
-                          <option value="3">$630</option>
+                          <option value="760">$760</option>
+                          <option value="680">$680</option>
+                          <option value="630">$630</option>
                         </select>                              
                     </div>
             </div>
             <div class="row  center-align">
-                <a class="center-align  waves-effect waves-ligth white-text btn-flat amber darken-2 verSal" id="buttonSaldo">Calcular</a>
+                <a class="center-align  waves-effect waves-ligth white-text btn-flat amber darken-2 verSal" id="buttonSaldo" onclick="getBipSaldoForBalance()">Calcular</a>
             </div>
             <div class="row">
                 <div class="col s12">
-                    <div id="resultado"></div>
+                    <div id="balance"></div>
                 </div>
             </div>
     </section>
@@ -66,7 +63,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>   
     <script type="text/javascript" src="../assets/materialize/js/materialize.min.js"></script>
     <script src="js/initMtrlz.js"></script>
-    <script src="js/callApiBip.js"></script>
+    <!-- <script src="js/callApiBip.js"></script> -->
+    <script src="js/calTar.js"></script> 
     <script src="js/main.js"></script>
 </body>
 </html>
