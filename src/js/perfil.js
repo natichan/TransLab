@@ -17,11 +17,15 @@ window.onload = ()=>{
     saveNumberCardBip = () => {
         let numberCard = cardBip.value;
         firebase.database().ref(`users/` + currentUser).child(`bip`).push(numberCard).key;
-};                
+    };                
     
+    //console.log(currentUser)
     const ref = firebase.database().ref(`users/` + currentUser)
+    //console.log(ref);
+    
     ref.once('value').then((data) => {
-            //console.log(Object.values(data.val()));
+            //console.log(Object.values(data.val()));        
+            
             let savedData = Object.values(data.val());
             let values = Object.values(savedData[0].bip);
             //console.log(savedData[0].bip);
@@ -30,7 +34,9 @@ window.onload = ()=>{
             `<h5 class='teal white darkgrey-text'>${element}</h5>`+ bipSaved.innerHTML; 
                 console.log(element);                
             });            
-            //console.log(values);     
-}); 
+            //console.log(values);
+     
+    }); 
+
 
     
