@@ -43,3 +43,6 @@ img{
 #logOut{
     margin-top: 5%;
 }
+select, options{
+    font-size: 12px;
+}

@@ -1,9 +1,10 @@
-let currentUser= ''; // variable global que contendra la id del usuario
+let currentUser= '';
 
 window.onload = ()=>{
     firebase.auth().onAuthStateChanged((user)=>{ // callback a firebase
         if(user){
-        currentUser = user.uid; // guardo la id del usuario
+        // Parameters
+        currentUser = user.uid;
         emailUserPrint.innerHTML = // imprime el email de la persona logueada en el perfil
         `<h6 class='teal white darkgrey-text'>${user.email}</h6>`; 
         //console.log('User > '+JSON.stringify(user));
@@ -14,23 +15,22 @@ window.onload = ()=>{
 };
     // guardando tarjeta bip
     saveNumberCardBip = () => {
-        let numberCard = cardBip.value; // input para tomar el valor de las tarjetas que ingrese el usuario
-        firebase.database().ref(`users/` + currentUser).child(`bip`).push(numberCard).key; // guardo la nueva llave de bip en los usuarios ya guardados en database
-    };                
+        let numberCard = cardBip.value;
+        firebase.database().ref(`users/` + currentUser).child(`bip`).push(numberCard).key;
+};                
     
-    // llamo a los datos de firebase para mostrarlos en pantalla
-    const ref = firebase.database().ref(`users/` + currentUser) // importante llamar al uid del usuario
+    const ref = firebase.database().ref(`users/` + currentUser)
     ref.once('value').then((data) => {
             //console.log(Object.values(data.val()));
-            let savedData = Object.values(data.val()); // me muestra los valores de la data, .val() es para obtener los valores
+            let savedData = Object.values(data.val());
             let values = Object.values(savedData[0].bip);
             //console.log(savedData[0].bip);
             values.forEach(element => {
                 bipSaved.innerHTML = 
-                `<h6 class='teal white darkgrey-text'>${element}</h6>`+ bipSaved.innerHTML; 
-                //console.log(element);                
-            });
+            `<h5 class='teal white darkgrey-text'>${element}</h5>`+ bipSaved.innerHTML; 
+                console.log(element);                
+            });            
             //console.log(values);     
-    }); 
+}); 
 
-
+    
