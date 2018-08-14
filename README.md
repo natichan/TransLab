@@ -1,6 +1,8 @@
 ## TRANSLAB
 
-Este proyecto es la segunda versión del desafío de Laboratoria para crear una aplicación web para ver tu saldo BIP!. En donde podrás ver el saldo, calcular la tarifa según las opciones de horario de viaje, agregar tus tarjetas y revisar las preguntas frecuentes.
+Este proyecto es la segunda versión del [desafío de Laboratoria](https://docs.google.com/presentation/d/1KyxnCwvjxEIEcQ4jYfVWwnaY0dzsdcoBsjRvO1U_4W8/edit#slide=id.g232c087bd1_0_87) para crear una aplicación web para ver tu saldo BIP! En donde podrás ver el saldo, calcular la tarifa según las opciones de horario de viaje, agregar tus tarjetas y revisar las preguntas frecuentes.
+
+[Avance Proyecto](https://natichan.github.io/TransLab/)
 
 #Planificación
 
