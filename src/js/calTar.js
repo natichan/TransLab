@@ -21,6 +21,6 @@ calculateBalance = (data) => {
     balance.innerHTML = 
     /* `<h5 class='teal grey darken-3 white-text center-align'>Costo Pasaje</h5>
         <p class='teal amber darken-2 white-text center-align'>$${inputCardBip}</p>` */
-    `<h6 class='teal grey darken-3 white-text center-align'>SALDO TOTAL</h6>
-        <p class='teal amber darken-2 white-text center-align'>$${balanceMinusSelectOptionRate}</p>`
+    `<h6 class='blueBip white-text center-align'>RESULTADO</h6>
+        <p class='white black-text center-align'>$${balanceMinusSelectOptionRate}</p>`
 }

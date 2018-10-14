@@ -13,25 +13,24 @@ body{
 .verSal{
     font-size: 19px;
     width: 60%;
-    margin-top: 10%;
-    margin-bottom: 15%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 .menu, .addCard{
     width: 50%;
     font-size: 19px;
 }
 header, .pregFrec{
-    margin-bottom: 15%;
-    padding: 10%;
+    margin-bottom: 1%;
+    padding: 1%;
     font-weight: bold;
 }
 h6{
-    padding: 3%;
-    margin: 0%;
+    padding: 1%;
 }
 p{
     margin: 0%;
-    padding: 7%;
+    padding: 2%;
     font-size: 40px;
 }
 img{
@@ -46,12 +45,27 @@ img{
 select, options{
     font-size: 12px;
 }
+.blueBip {
+    background: #303b87;
+}
+.dateHour{
+    font-size: 20px;
+}
 @media (max-width: 900px) {
     .space{
-        margin-top: 50%;
+        margin-top: 30%;
     }
     .menu, .addCard{
         width: 100%;
         font-size: 19px;
     }
+    header, .pregFrec{
+        margin-bottom: 3%;
+        padding: 3%;
+    }
+    h6{
+        padding: 3%;
+        margin: 0%;
+    }
+    
 }

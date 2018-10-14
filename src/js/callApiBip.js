@@ -14,9 +14,14 @@ btn.addEventListener('click', getBipSaldo = () => {
 
 printData = (data) => {
     let dataBip = Object.values(data)
+    // console.log(data);
     let resultTarjeta = dataBip[2];
+    let fechaHora = dataBip[3];
+    // console.log(fechaHora);
     dataBip[2] =document.getElementById('saldoBip').value;
     container.innerHTML= 
-    `<h6 class='teal grey darken-3 white-text'>SALDO TOTAL</h6>
-        <p class='teal amber darken-2 white-text'>${resultTarjeta}</p>`
+    `<h6 class='blueBip white-text'>SALDO TOTAL</h6>
+        <p class='white black-text'>${resultTarjeta}</p>
+        <p class='white black-text dateHour'>${fechaHora}</p>`
+        
 }
