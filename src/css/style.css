@@ -2,13 +2,13 @@ body{
     background-color: #dcdddf;
 }
 .nav-wrapper{
-    background-color: #404143;
+    background-color: #303b87;
 }
 .card-panel{
     padding: 1%;
 }
 .space{
-    margin-top: 50%;
+    margin-top: 9%;
 }
 .verSal{
     font-size: 19px;
@@ -17,7 +17,7 @@ body{
     margin-bottom: 15%;
 }
 .menu, .addCard{
-    width: 100%;
+    width: 50%;
     font-size: 19px;
 }
 header, .pregFrec{
@@ -45,4 +45,13 @@ img{
 }
 select, options{
     font-size: 12px;
+}
+@media (max-width: 900px) {
+    .space{
+        margin-top: 50%;
+    }
+    .menu, .addCard{
+        width: 100%;
+        font-size: 19px;
+    }
 }
