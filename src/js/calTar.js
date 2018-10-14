@@ -1,6 +1,6 @@
 getBipSaldoForBalance = () => {
     let numTarjeta = saldoBip.value
-    url=`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta}` ;
+    url=`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta}` ;
     fetch(url)
         .then(response => response.json()
         ).then(data => {
