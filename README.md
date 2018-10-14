@@ -1,13 +1,22 @@
 ## TRANSLAB
 
-Este proyecto es la segunda versión del [desafío de Laboratoria](https://docs.google.com/presentation/d/1KyxnCwvjxEIEcQ4jYfVWwnaY0dzsdcoBsjRvO1U_4W8/edit#slide=id.g232c087bd1_0_87) para crear una aplicación web para ver tu saldo BIP! En donde podrás ver el saldo, calcular la tarifa según las opciones de horario de viaje, agregar tus tarjetas y revisar las preguntas frecuentes.
+Este proyecto es la segunda iteración del desafío de Laboratoria que consiste en una aplicación mobile web para ver tu saldo BIP! 
+
+Ofrece la posibilidad de ver el saldo, calcular la tarifa según las opciones de horario de viaje, agregar tus tarjetas, revisar las preguntas frecuentes y tener todo guardado bajo tu sesión.
 
 [Avance Proyecto](https://natichan.github.io/TransLab/)
 
-#Planificación
+# Planificación
 
 En la planificación de este proyecto use [Trello](https://trello.com/b/kZ4QcznP/translab).
 
 # Diseño
-El diseño de esta aplicación esta inspirada en la [página web de la tarjeta bip]( http://www.tarjetabip.cl/
-)
+El diseño de esta aplicación esta inspirada en la [página web de la tarjeta bip](http://www.tarjetabip.cl/) junto con el mockUp entregado en el [reto de Laboratoria](https://github.com/natichan/TransLab/blob/master/assets/img/MockUpRetoLaboratoria). Decidi usar la combinación de ambas para crear una experiencia de usuario diferente y conectada con el sistema BIP.
+
+# Herramientas desarrollo web
+- JS vanilla
+- Firebase
+- Materialize
+- Mocha
+- CSS
+
