@@ -1,17 +1,21 @@
 body{
-    background-color: #404143;
+    background-color: #303b87;
 }
-.logo{
-    width: 40%;
-    margin: 5em 5em 0em 6em;
-    font-weight: bold;
+h6{
+    color: white;
+    margin-bottom: 3%;
 }
 .box{
     background-color: white;
     padding: 0%;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 3%;
     margin-bottom: 0%;
+}
+.logo{
+    width: 40%;
+    margin: 1em 5em 0em 6em;
+    font-weight: bold;
 }
 h2{
     text-align: center;
@@ -23,10 +27,6 @@ h2{
     width: 100%;
     font-size: 20px;
 }
-h6{
-    color: white;
-    margin-bottom: 8%;
-}
 header, main, footer {
     padding-left: 300px;
 }
@@ -34,6 +34,17 @@ header, main, footer {
     background-color: #faad00;
 }
 .back{
-    margin-top: 5%;
-
+    margin-top: 3%;
+}
+@media (max-width: 700px){
+    .logo{
+        width: 70%;
+        margin: 4em 5em 0em 3.5em;
+    }
+    .box{
+        margin-top: 20%;
+    }
+    h6{
+        margin-bottom: 5%;
+    }
 }
