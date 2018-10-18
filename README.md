@@ -20,3 +20,5 @@ El diseño de esta aplicación esta inspirada en la [página web de la tarjeta b
 - Mocha
 - CSS
 
+## Desarrollado para
+[Laboratoria](https://www.laboratoria.la/)
