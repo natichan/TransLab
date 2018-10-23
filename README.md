@@ -4,7 +4,8 @@ BIP Translab es aplicación web donde puedes consultar el saldo de tu tarjeta Bi
 
 ![screenshot from 2018-10-23 10-06-47](https://user-images.githubusercontent.com/39122711/47362722-75dd7700-d6ab-11e8-90de-df7fe8f66422.png)
 
-[BIP! TransLab](https://natichan.github.io/TransLab/)
+## Desarrollado para
+[Laboratoria](https://www.laboratoria.la/)
 
 ## Planificación
 
@@ -21,5 +22,4 @@ El diseño de esta aplicación esta inspirada en la [página web de la tarjeta b
 - CSS
 - Rest-Api
 
-## Desarrollado para
-[Laboratoria](https://www.laboratoria.la/)
+[BIP! TransLab](https://natichan.github.io/TransLab/)
