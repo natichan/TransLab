@@ -1,10 +1,10 @@
 # BIP TRANSLAB
 
-Este proyecto es la segunda iteración del desafío de Laboratoria que consiste en una aplicación mobile web para ver tu saldo BIP! 
+BIP Translab es aplicación web donde puedes consultar el saldo de tu tarjeta Bip, y calcular la tarifa según las opciones de horario de viaje.
 
-Ofrece la posibilidad de ver el saldo, calcular la tarifa según las opciones de horario de viaje, agregar tus tarjetas, revisar las preguntas frecuentes y tener todo guardado bajo tu sesión.
+![screenshot from 2018-10-23 09-47-01](https://user-images.githubusercontent.com/39122711/47361591-b5569400-d6a8-11e8-942a-3111efe7b9cd.png)
 
-[Avance Proyecto](https://natichan.github.io/TransLab/)
+[BIP! TransLab](https://natichan.github.io/TransLab/)
 
 ## Planificación
 
@@ -19,6 +19,7 @@ El diseño de esta aplicación esta inspirada en la [página web de la tarjeta b
 - Materialize
 - Mocha
 - CSS
+- Rest-Api
 
 ## Desarrollado para
 [Laboratoria](https://www.laboratoria.la/)
