@@ -2,7 +2,7 @@
 
 BIP Translab es aplicación web donde puedes consultar el saldo de tu tarjeta Bip, y calcular la tarifa según las opciones de horario de viaje.
 
-![screenshot from 2018-10-23 09-47-01](https://user-images.githubusercontent.com/39122711/47361591-b5569400-d6a8-11e8-942a-3111efe7b9cd.png)
+![screenshot from 2018-10-23 10-06-47](https://user-images.githubusercontent.com/39122711/47362722-75dd7700-d6ab-11e8-90de-df7fe8f66422.png)
 
 [BIP! TransLab](https://natichan.github.io/TransLab/)
 
